@@ -1,3 +1,386 @@
 body {
-background: #420420;
+background: #bfd6ec;
+display: flex;
+align-items: center;
+justify-content: center;
+padding:39px;
+}
+
+.main-container{
+    display:flex;
+    flex-direction: row;
+    background: #FFFFFF;
+    width:100%;
+    height:100%;
+    border-radius: 16px;
+    box-shadow: 0px 0px 15px 5px #000000AA;
+    overflow: hidden;
+}
+
+.content{
+    display: flex;
+    background-blend-mode: lighten;
+    background-image: url("../images/bg2.png");
+    width:75%;
+    height:100%;
+    overflow: scroll;
+    z-index: 4;
+    scroll-behavior: auto;
+    scroll-snap-type: both mandatory ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+ .content::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+.content-container{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5px 5px #00000039;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 80%;
+    height: 75%;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-container-first{
+    margin-top: 10%;
+}
+
+.content-container-last{
+    margin-bottom: 10%;
+}
+
+
+
+
+.Content-Title{
+    font-size: 54px;
+    margin-right: 39px;
+    margin-left: 39px;
+    margin-top: 39px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #696969;
+    font-weight: normal;
+    align-self: start;
+}
+
+
+.Content-Description{
+    font-size: 24px;
+    margin-right: 39px;
+    margin-left: 39px;
+    margin-top: 0px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #696969;
+    font-weight: normal;
+    align-self: start;
+}
+
+
+.Languages-Container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 25%;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.Language{
+    background: white;
+    height: 100px;
+    width: 100px;
+    border-radius: 25px;
+    transition-duration: 0.25s;
+}
+
+.C{
+    background-image: url("../images/C.png");
+}
+
+.Cpp{
+    background-image: url("../images/Cpp.png");
+}
+
+.Java{
+    background-image: url("../images/Java.png");
+}
+
+.Python{
+    background-image: url("../images/Python.png");
+}
+
+.JS{
+    background-image: url("../images/JS.png");
+}
+
+.Language:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 5px #00000039;
+}
+
+
+.Language-Label{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    bottom: -64px;
+    color: #393939;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px #00000039;
+    transition-duration: 0.25s;
+    opacity: 0;
+    z-index: 4;
+}
+
+
+.Language:hover > .Language-Label{
+    opacity: 1;
+    bottom: -120px;
+}
+
+
+
+
+
+
+
+.Carousel-Container{
+    display: flex;
+    height: 60%;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.Carousel-Item{
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+    width: 512px;
+    box-shadow: 0px 0px 5px 5px #00000039;
+    border-radius: 10px;
+    background:white;
+    margin: 10px;
+    flex-shrink: 0;
+    animation-name: carousel-anim;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    transition-duration: 0.5s;
+}
+
+.Carousel-Container:hover > .Carousel-Item{
+    animation-play-state: paused;
+}
+
+.Carousel-Item:hover{
+    height: 95%;
+}
+
+@keyframes carousel-anim{
+    0% {transform: translateX(0px);}
+    100% {transform: translateX(-2128px);}
+}
+
+
+.Last{
+    background: black;
+}
+
+
+
+.Carousel-Title{
+    font-size: 24px;
+    margin-right: 39px;
+    margin-left: 39px;
+    margin-top: 39px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #696969;
+    font-weight: normal;
+    align-self: start;
+}
+
+
+.Carousel-Description{
+    font-size: 18px;
+    margin-right: 39px;
+    margin-left: 39px;
+    margin-top: 0px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #696969;
+    font-weight: normal;
+    align-self: start;
+}
+
+
+
+
+
+
+
+
+
+
+
+.side-bar{
+    background: #393939;
+    width:25%;
+    height:100%;
+    box-shadow: 0px 0px 10px 10px #00000039;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+}
+
+.side-bar > h2{
+    color: #FFFFFF;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    font-size: 25px;
+    text-shadow: 1px 1px 5px #000000;
+    margin-bottom: 3px;
+}
+
+.side-bar > h3{
+    color: #EEEEEE;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    font-size: 25px;
+    text-shadow: 1px 1px 5px #000000;
+    margin:12px;
+    margin-bottom: 10px;
+    margin-top: 24px;
+    align-self: start;
+}
+
+.side-bar > h4{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    text-shadow: 1px 1px 5px #000000;
+}
+
+
+.profile-image{
+    width:50%;
+    border-radius: 15%;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 1px #101010;
+}
+
+.CGPA{
+    color: #DDDDDD;
+    margin:0px;
+}
+
+.Degree{
+    color: #EEEEEE;
+    margin:0px;
+}
+
+.Institute{
+    color: #999999;
+    margin:0;
+}
+
+.divider{
+    width:60%;
+    height:1px;
+    background: #999999;
+    margin-top:5px;
+    margin-bottom:15px;
+}
+
+.Skill-flex{
+ display: flex;
+ align-items: center;
+ flex-direction: row;
+ flex-wrap: wrap;
+ overflow: wrap;  
+ width: 100%;
+ height:10%;
+ justify-content: center;
+ gap:20px;
+}
+
+.Skill-flex-item{
+ display:flex;
+ flex-direction: column;
+ justify-content: end;
+ align-items: center;
+ height:64px;
+ width:64px;
+ border-radius: 100%;
+ transition-duration: 0.25s;
+ background-size: contain;
+ border: 1px solid #FFFFFF69;
+}
+
+.Skill-flex-item:hover{
+ box-shadow: 0px 0px 10px 5px #00000069;
+ transform: scale(1.25);
+}
+
+
+.Skill-Label{
+    position: relative;
+    bottom: -20px;
+    color: #DDDDDD;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #393939;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px #00000069;
+    transition-duration: 0.25s;
+    opacity: 0;
+}
+
+
+.Skill-flex-item:hover > .Skill-Label{
+    opacity: 1;
+    bottom: -50px;
+}
+
+.Skill-Android{
+    background-image: url("../images/android.png");
+}
+
+.Skill-Opencv{
+    background-image: url("../images/opencv.png");
+}
+
+.Skill-Firebase{
+    background-image: url("../images/firebase.png");
+}
+
+.Skill-Iot{
+    background-image: url("../images/iot.png");
+}
+
+.Skill-Arduino{
+    background-image: url("../images/arduino.png");
 }
