@@ -144,4 +144,21 @@ html, body {
 .Desel
 {
     background: #393939;
+    box-shadow: 0px 0px 10px 5px red;
+}
+
+
+.rock{
+    background: url("../images/rock.png");
+    background-size: cover;
+}
+
+.paper{
+    background: url("../images/paper.png");
+    background-size: cover;
+}
+
+.scissors{
+    background: url("../images/scissors.png");
+    background-size: cover;
 }
