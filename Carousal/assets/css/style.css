@@ -1,0 +1,67 @@
+
+html, body{
+display: flex;
+height: 100%;
+width:100%;
+background: #393939;
+}
+
+.image{
+background-size: cover;
+height: 100%;
+width: 100%;
+}
+
+.img1{
+background-image: url("../images/bg1.jpg");
+}
+
+
+.img2{
+background-image: url("../images/bg2.jpg");
+}
+
+
+.img3{
+background-image: url("../images/con2.jpg");
+}
+
+
+.img4{
+background-image: url("../images/con1.jpg");
+}
+
+
+.img5{
+background-image: url("../images/con3.jpg");
+}
+
+.Carousel-Container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    background: green;
+}
+
+
+.Carousel-Item{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0px 0px 5px 5px #00000039;
+    background:white;
+    flex-shrink: 0;
+}
+
+.Next
+{
+
+}
+
+.Prev{
+
+}
