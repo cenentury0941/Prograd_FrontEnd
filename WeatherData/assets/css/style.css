@@ -1,0 +1,144 @@
+
+html, body {
+    height:100%;
+    margin:0%;
+    background: #000039;
+}
+
+.map-parent{
+    display: flex;
+    overflow: hidden;
+    min-height: 100%;
+    max-height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    left: 10px;
+    position: absolute;
+    height: 92%;
+    width: 60%;
+    padding-left: 1%;
+    padding-right: 1%;
+    transform: translateY(0%);
+    box-shadow: 0px 0px 10px 2px black;
+    min-width: 480px;
+}
+
+.Result-Container{
+    display: flex;
+    align-self: center;
+    width: 100%;
+    height: 70%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.loader{
+    background-image: url("../images/loading.gif");
+    height: 39px;
+    width: 39px;
+    justify-self: center;
+    background-size: contain;
+}
+
+.Data-Item{
+    height: 100%;
+    width: 18%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px 0px black;
+    border-radius: 15px;
+    margin-top: 7%;
+    transition-duration: 0.2s;
+}
+
+.Data-Item:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px 1px black;
+}
+
+h5{
+    margin-top: 15px;
+}
+
+.First{
+    border: 5px solid cyan;
+}
+
+.Data-Item > img {
+    width: 100%;
+}
+
+.Data-Label{
+    display: flex;
+    width: 100px;
+    color: #393939;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;;
+}
+
+.control-row{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+}
+
+.map{
+    display: flex;
+    min-height: 2011px;
+    min-width: 8192px;
+    background-image: url("../images/earth.jpg");
+    transition-duration: 3s;
+    z-index: 0;
+}
+
+.Pyongyang{
+    transform: translateX(-30%) translateY(-10%);
+}
+
+.Batman{
+    transform: translateX(-7%) translateY(-10%);
+}
+
+.Bangalore{
+    transform: translateX(-16%) translateY(-39%);
+}
+
+.Tokyo{
+    transform: translateX(-33%) translateY(-10%);
+}
+
+.NewYork{
+    transform: translateX(26%) translateY(-5%);
+}
+
+.Moscow{
+    transform: translateX(-3%) translateY(10%);
+}
+
+.Honolulu{
+    transform: translateX(50%) translateY(-25%);
+}
+
+.Sydney{
+    transform: translateX(-30%) translateY(-50%);
+}
+
+.London{
+    transform: translateX(6%) translateY(10%);
+}
+
+.Cairo{
+    transform: translateX(-3%) translateY(-17%);
+}
