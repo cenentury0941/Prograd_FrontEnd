@@ -3,7 +3,7 @@ html, body{
 display: flex;
 height: 100%;
 width:100%;
-background: #393939;
+background: #000000;
 }
 
 .image{
@@ -55,13 +55,30 @@ background-image: url("../images/con3.jpg");
     box-shadow: 0px 0px 5px 5px #00000039;
     background:white;
     flex-shrink: 0;
+    transform: translateX(-200%);
 }
 
 .Next
 {
-
+background: black;
+background-image: url("../images/next.png");
+background-repeat: no-repeat;
+background-size: contain;
+height:75%;
+width:5%;
+align-self: center;
+right:0;
+position:absolute;		
 }
 
 .Prev{
-
+background: black;
+background-image: url("../images/preev.png");
+background-repeat: no-repeat;
+background-size: contain;
+height:75%;
+width:5%;
+align-self: center;
+left:0;
+position:absolute;
 }
