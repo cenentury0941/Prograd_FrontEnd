@@ -10,16 +10,16 @@
     <body>
         <div class="PlayArea" id="playarea">
             <div class="ScoreArea">
-                <div class="ScoreCard"><h2>YOU</h2><h1>0</h1></div>
-                <div class="ScoreCard"><h2>CPU</h2><h1>0</h1></div>
+                <div class="ScoreCard"><h2>YOU</h2><h1 id="ps">0</h1></div>
+                <div class="ScoreCard"><h2>CPU</h2><h1 id="cs">0</h1></div>
             </div>
             <div class="ButtonArea">
-                <div class="Button" onclick="Play(0)"></div>
-                <div class="Button desel"></div>
-                <div class="Button desel"></div>
+                <div class="Button" id="rb" onclick="Play(0)"></div>
+                <div class="Button" onclick="Play(1)" id="pb" ></div>
+                <div class="Button" onclick="Play(2)" id="sb" ></div>
             </div>
         </div>
-        <div class="BotRock"></div>
+        <div class="BotRock" id="bot"></div>
     </body>
 
 </html>

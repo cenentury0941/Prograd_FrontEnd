@@ -21,6 +21,30 @@ html, body {
     margin: 10px;
 }
 
+.BotSic{
+    background-image: url("../images/scissors.gif");
+    background-size: cover;
+    height: 97%;
+    width: 45%;
+    transition-duration: 0.5s;
+    flex-shrink: 0;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 5px #00000039;
+    margin: 10px;
+}
+
+.BotPap{
+    background-image: url("../images/paper.gif");
+    background-size: cover;
+    height: 97%;
+    width: 45%;
+    transition-duration: 0.5s;
+    flex-shrink: 0;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 5px #00000039;
+    margin: 10px;
+}
+
 .PlayArea{
     display: flex;
     flex-direction: column; 
@@ -83,6 +107,7 @@ html, body {
     background: #ffffff;
     border-radius: 39px;
     box-shadow: 0px 0px 10px 5px #00000039;
+    transition-duration: 0.1s;
 }
 
 .Button:hover{
