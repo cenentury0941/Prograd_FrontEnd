@@ -34,5 +34,9 @@ function NextImage()
 
 function ChangeColour()
 {
-
+console.log("Changed");
+var col = document.getElementById("favcolor").value ;
+console.log( col );
+var elem = document.getElementById("i"+curpos);
+elem.style.background = col;
 }
